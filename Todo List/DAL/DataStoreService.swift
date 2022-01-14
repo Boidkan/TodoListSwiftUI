@@ -10,7 +10,6 @@ import CoreData
 
 
 protocol TodoDataStore: AnyObject {
-//    func getTodoItems() -> [TodoItem]
     func getTodoItems(completion: @escaping ([TodoItem]) -> Void)
     func save(item: TodoItem)
     func delete(items: [TodoItem])
